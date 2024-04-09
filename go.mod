@@ -1,6 +1,6 @@
 module github.com/ahmetremziata/go-github-ci-cd
 
-go 1.22.0
+go 1.19
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
