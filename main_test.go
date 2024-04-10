@@ -18,6 +18,7 @@ func TestMain(t *testing.T) {
 		main()
 	})
 	assert.Equal(t, "Total sum=25", output)
+	assert.Equal(t, "Total sum=25", output)
 }
 
 func captureOutput(f func()) string {
