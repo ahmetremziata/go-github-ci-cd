@@ -82,13 +82,13 @@ jobs:
           aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
 
       - name: Build Golang application
-        run: go build -o app ./cmd/pgusers
+        run: go build -o app .
 
       - name: create the bundle source
         run: zip -r app.zip app
 
       - name: Upload source bundle to S3
-        run: aws s3 cp app.zip s3://ramsey-golang/app.zip
+        run: aws s3 cp app.zip s3://ahmetremziata/app.zip
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
