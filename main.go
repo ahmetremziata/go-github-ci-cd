@@ -10,11 +10,3 @@ func main() {
 func calculateSum(first int, second int) int {
 	return first + second
 }
-
-type Order struct {
-	ID       string
-	Date     int64
-	City     string
-	Amount   float64
-	District string
-}
